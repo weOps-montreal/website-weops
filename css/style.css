@@ -374,6 +374,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 .contact__sub {
