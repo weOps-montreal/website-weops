@@ -101,12 +101,14 @@ burger.addEventListener('click', () => {
   const open = burger.getAttribute('aria-expanded') === 'true';
   burger.setAttribute('aria-expanded', String(!open));
   navLinks.classList.toggle('open', !open);
+  nav.classList.toggle('menu-open', !open);
 });
 
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     burger.setAttribute('aria-expanded', 'false');
     navLinks.classList.remove('open');
+    nav.classList.remove('menu-open');
   });
 });
 
