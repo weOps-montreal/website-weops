@@ -112,4 +112,5 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+
 applyLang();
