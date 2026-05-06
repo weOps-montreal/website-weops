@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeOps — Opérations & Plateformes</title>
+  <meta name="description" content="WeOps transforme des opérations complexes en systèmes fiables et durables." />
+  <link rel="preload" href="assets/fonts/ClashGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="WeOps">
+        <img src="assets/img/WE_OPS_LOGO_WHITE_HORIZ.svg" alt="WeOps" width="120" height="36" />
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#services"  data-i18n="nav.services">Services</a>
+        <a href="#pourquoi"  data-i18n="nav.why">Pourquoi WeOps</a>
+        <a href="#apropos"   data-i18n="nav.about">À propos</a>
+        <a href="#contact"   data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__label" data-i18n="hero.label">Opérations · Plateformes · Fiabilité</p>
+        <h1 class="hero__title" data-i18n="hero.title">Vos opérations,<br>maîtrisées.</h1>
+        <p class="hero__sub" data-i18n="hero.sub">We turn messy operations into efficient systems.</p>
+        <a href="#contact" class="btn btn--primary" data-i18n="hero.cta">Parlons-en</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__num" aria-hidden="true">01</span>
+          <h2 class="section__title" data-i18n="services.title">Ce qu'on fait</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">☁</span>
+            <h3 class="card__title" data-i18n="services.cloud.title">Infrastructure cloud</h3>
+            <p class="card__body" data-i18n="services.cloud.body">AWS, Azure, GCP — des environnements fiables, pensés pour durer.</p>
+          </div>
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">⬡</span>
+            <h3 class="card__title" data-i18n="services.platform.title">Plateformes internes</h3>
+            <p class="card__body" data-i18n="services.platform.body">Des outils qui accélèrent vos équipes sans créer de dépendances.</p>
+          </div>
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">⇄</span>
+            <h3 class="card__title" data-i18n="services.cicd.title">Pipelines CI/CD</h3>
+            <p class="card__body" data-i18n="services.cicd.body">Des livraisons prévisibles, des déploiements sans friction.</p>
+          </div>
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">◈</span>
+            <h3 class="card__title" data-i18n="services.reliability.title">Fiabilisation des systèmes</h3>
+            <p class="card__body" data-i18n="services.reliability.body">On structure ce qui est fragile. On rend exploitable ce qui est opaque.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POURQUOI WEOPS -->
+    <section class="section section--alt" id="pourquoi">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__num" aria-hidden="true">02</span>
+          <h2 class="section__title" data-i18n="why.title">Pourquoi WeOps</h2>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <h3 class="pillar__title" data-i18n="why.senior.title">Expertise terrain</h3>
+            <p class="pillar__body" data-i18n="why.senior.body">Une équipe senior, pas des juniors. Des intervenants qui ont déjà vu ce que vous traversez.</p>
+          </div>
+          <div class="pillar">
+            <h3 class="pillar__title" data-i18n="why.stability.title">Stabilité sur la durée</h3>
+            <p class="pillar__body" data-i18n="why.stability.body">On intervient pour que ça tienne, pas pour livrer et partir.</p>
+          </div>
+          <div class="pillar">
+            <h3 class="pillar__title" data-i18n="why.simple.title">Sans complexité inutile</h3>
+            <p class="pillar__body" data-i18n="why.simple.body">On structure sans sur-ingénierer. La bonne solution, pas la plus impressionnante.</p>
+          </div>
+          <div class="pillar">
+            <h3 class="pillar__title" data-i18n="why.transfer.title">Transfert réel</h3>
+            <p class="pillar__body" data-i18n="why.transfer.body">Vos équipes repartent avec la maîtrise. Pas de dépendance à long terme.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__num" aria-hidden="true">03</span>
+          <h2 class="section__title" data-i18n="about.title">À propos</h2>
+        </div>
+        <div class="about">
+          <p class="about__text" data-i18n="about.body">WeOps, c'est une expertise terrain forgée depuis des années sur des systèmes critiques. Pas une grande firme. Une équipe ciblée, complémentaire, qui intervient là où la stabilité et la performance ne sont pas négociables.</p>
+          <p class="about__tag" aria-hidden="true">DevOps since 00110001 00111001 00111001 00111000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact">
+        <div class="section__header">
+          <span class="section__num" aria-hidden="true">04</span>
+          <h2 class="section__title" data-i18n="contact.title">Parlons de vos systèmes</h2>
+        </div>
+        <p class="contact__sub" data-i18n="contact.sub">Une conversation sans pression. On évalue ensemble si on peut vous aider.</p>
+        <a href="mailto:info@weops.ca" class="btn btn--primary" data-i18n="contact.cta">Écrire à info@weops.ca</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/img/WE_OPS_LOGO_WHITE_HORIZ.svg" alt="WeOps" width="90" height="28" />
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 WeOps. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
