@@ -97,6 +97,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .nav__logo img { height: 32px; width: auto; }
 
+@keyframes glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(102, 48, 249, .6)); }
+  50%       { filter: drop-shadow(0 0 28px rgba(102, 48, 249, 1)) drop-shadow(0 0 55px rgba(102, 48, 249, .8)); }
+}
+
+.logo--glitch {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
 .nav__links {
   display: flex;
   align-items: center;
