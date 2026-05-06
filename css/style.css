@@ -190,7 +190,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-block: calc(var(--nav-h) + 4rem) 4rem;
+  padding-block: calc(var(--nav-h) - 32px) 2rem;
 }
 
 .hero__grid-bg {
@@ -231,7 +231,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   width: 100%;
   max-width: 560px;
   height: auto;
-  border-radius: 16px;
   filter: drop-shadow(0 0 60px rgba(102, 48, 249, .4));
 }
 
