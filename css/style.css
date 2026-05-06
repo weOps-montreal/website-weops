@@ -1,4 +1,14 @@
 /* ── Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('../assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('../assets/fonts/ClashDisplay-Variable.woff')  format('woff');
+  font-weight: 200 700;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'ClashGrotesk';
   src: url('../assets/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
@@ -15,8 +25,10 @@
   --mint:   #93FF8C;
   --white:  #F2F4F7;
 
-  --ff-base: 'ClashGrotesk', system-ui, sans-serif;
-  --ff-mono: 'Courier New', monospace;
+  --ff-base:    'ClashGrotesk', system-ui, sans-serif;
+  --ff-display: 'ClashDisplay', system-ui, sans-serif;
+  --ff-accent:  'Smooch Sans', 'ClashGrotesk', sans-serif;
+  --ff-mono:    'Courier New', monospace;
 
   --nav-h: 64px;
   --max-w: 1100px;
@@ -185,8 +197,31 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
-  max-width: 720px;
+  max-width: 680px;
+}
+
+.hero__visual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__visual img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  filter: drop-shadow(0 0 60px rgba(102, 48, 249, .4));
 }
 
 .hero__label {
@@ -198,6 +233,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .hero__title {
+  font-family: var(--ff-display);
   font-size: clamp(2.8rem, 8vw, 5.5rem);
   font-weight: 600;
   line-height: 1.05;
@@ -205,10 +241,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .hero__sub {
+  font-family: var(--ff-accent);
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: var(--slate);
   font-weight: 300;
   max-width: 480px;
+  letter-spacing: .02em;
 }
 
 /* ── Sections ──────────────────────────────────────── */
@@ -233,6 +271,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex-shrink: 0;
 }
 .section__title {
+  font-family: var(--ff-display);
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 600;
   letter-spacing: -.02em;
@@ -264,6 +303,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   line-height: 1;
 }
 .card__title {
+  font-family: var(--ff-display);
   font-size: 1.05rem;
   font-weight: 500;
 }
@@ -287,6 +327,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   border-top: 2px solid var(--violet);
 }
 .pillar__title {
+  font-family: var(--ff-display);
   font-size: 1.05rem;
   font-weight: 500;
 }
