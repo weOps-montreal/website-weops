@@ -102,8 +102,19 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   50%       { filter: drop-shadow(0 0 28px rgba(102, 48, 249, 1)) drop-shadow(0 0 55px rgba(102, 48, 249, .8)); }
 }
 
+@keyframes glow-pulse-mobile {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(102, 48, 249, .9)) drop-shadow(0 0 20px rgba(102, 48, 249, .6)); }
+  50%       { filter: drop-shadow(0 0 30px rgba(102, 48, 249, 1)) drop-shadow(0 0 50px rgba(102, 48, 249, 1)) drop-shadow(0 0 70px rgba(102, 48, 249, .7)); }
+}
+
 .logo--glitch {
   animation: glow-pulse 3s ease-in-out infinite;
+}
+
+@media (max-width: 720px) {
+  .logo--glitch {
+    animation-name: glow-pulse-mobile;
+  }
 }
 
 .nav__links {
