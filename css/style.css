@@ -158,7 +158,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--white);
+  background: var(--slate);
   border-radius: 2px;
   transition: transform .25s, opacity .25s;
 }
